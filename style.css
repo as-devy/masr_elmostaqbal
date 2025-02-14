@@ -348,8 +348,12 @@ footer {
     }
 
     .container p,
-    main .banner .title{
+    main .banner .title {
         text-align: center;
+    }
+
+    main .banner .title{
+        font-size: 1.8rem;
     }
 
     section img {
@@ -362,22 +366,22 @@ footer {
     }
 }
 
-@media (max-width: 1250px){
-    .about_main .personal .container{
+@media (max-width: 1250px) {
+    .about_main .personal .container {
         flex-direction: column-reverse;
         margin-top: 10px;
     }
 
-    .personal .text{
+    .personal .text {
         width: 100%;
     }
 
-    .personal .certificates{
+    .personal .certificates {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .personal .wrapper_img{
+    .personal .wrapper_img {
         width: 350px;
     }
 }
