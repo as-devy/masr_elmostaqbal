@@ -364,6 +364,10 @@ footer {
     .title h4 {
         font-size: 0.8rem !important;
     }
+
+    .img_model img{
+        width: 350px;
+    }
 }
 
 @media (max-width: 1250px) {
