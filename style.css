@@ -342,6 +342,13 @@ footer {
 }
 
 @media (max-width: 990px) {
+    main{
+        padding-top: 3rem;
+    }
+    main .banner{
+        background-size: contain;
+        height: 17vh;
+    }
     .container:not(header .container) {
         flex-direction: column;
         gap: 2rem;
@@ -353,7 +360,7 @@ footer {
     }
 
     main .banner .title{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     section img {
