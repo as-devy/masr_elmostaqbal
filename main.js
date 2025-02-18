@@ -11,3 +11,7 @@ document.addEventListener("click", function (event) {
         mobileMenu.classList.remove("active");
     }
 });
+
+document.querySelectorAll(".PPhIP").forEach(ele => {
+    ele.style.display = 'none';
+})

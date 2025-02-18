@@ -47,6 +47,18 @@ header .title img {
     ;
 }
 
+.sub_page .container{
+    display: block !important;
+    text-align: center;
+}
+
+.sub_page .container ul{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -54,6 +66,10 @@ header .title img {
     width: 90%;
     margin: 0 auto;
 }
+
+/* .sub_page .container{
+    width: 95%;
+} */
 
 header .nav {
     list-style: none;
@@ -122,8 +138,28 @@ main .banner .title {
 
 section {
     padding: 100px 0;
+}
+
+section:not(:last-child){
     border-bottom: 5px solid #fff;
 }
+
+/* .sub_page section{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+/* .sub_page section p{
+    margin: 0 auto !important;
+    width: 100%;
+} */
+
+.sub_page section ul li{
+    margin: 10px auto !important;
+}
+
 
 section .container {
     gap: 1rem;
@@ -309,6 +345,52 @@ footer {
 }
 
 #burger_menu {
+    display: none;
+}
+
+#h\.7a885a51f563c731_3 > div.mYVXT > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#h\.1d3bfe8ae96f1fc1_384 > div > div > div > div > div.JmGwdf.SzkQif.L6cTce-hJDwNd.L6cTce-dQCS7c > div.pHBU0d{
+    display: none;
+}
+
+#h\.yhl9l35ap91_l{
+    margin-bottom: 30px !important;
+    text-align: center !important;
+}
+
+#h\.1d3bfe8ae96f1fc1_150{
+    font-size: 1.5rem;
+}
+
+/* #h\.1d3bfe8ae96f1fc1_151 > div > div > p:nth-child(25){
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#h\.1d3bfe8ae96f1fc1_151 > div > div > p:nth-child(25) .C9DxTc {
+    display: inline-block;
+} */
+
+#h\.3kzuaft2b5o9_l{
+    text-align: center !important;
+    margin-bottom: 20px;
+}
+
+.tyJCtd.mGzaTb.Depvyb.baZpAe h3,
+#h\.aiep60gamsiu_l,
+#h\.qbrphpi1ik3_l{
+    text-align: center !important;
+    margin-bottom: 30px;
+}
+
+#h\.1d3bfe8ae96f1fc1_392 > div > div > div > div > div.JmGwdf.SzkQif.L6cTce-hJDwNd.L6cTce-dQCS7c > div.pHBU0d{
     display: none;
 }
 
