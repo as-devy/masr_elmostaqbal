@@ -48,8 +48,9 @@ header .title img {
 }
 
 .sub_page .container{
+    width: 80%;
     display: block !important;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .sub_page .container ul{
@@ -191,12 +192,16 @@ section img {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-section p {
+section p:not(.sub_page section p){
     max-width: 800px;
     margin: 30px 0;
     line-height: 2;
     font-size: 1.1rem;
 }
+
+/* .sub_page section p{
+    max-width: 1000px !important;
+} */
 
 section .btn {
     background-color: #0093ff;
