@@ -47,6 +47,10 @@ header .title img {
     ;
 }
 
+.sub_page *{
+    font-family: "Cairo", serif;
+}
+
 .sub_page .container{
     width: 80%;
     display: block !important;
