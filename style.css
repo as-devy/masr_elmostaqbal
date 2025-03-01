@@ -450,8 +450,9 @@ footer {
         padding-top: 3rem;
     }
     main .banner{
-        background-size: contain;
-        height: 17vh;
+        background-size: cover;
+        height: 25vh;
+        background-attachment: unset;
     }
     .container:not(header .container) {
         flex-direction: column;
