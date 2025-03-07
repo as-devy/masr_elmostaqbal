@@ -248,6 +248,12 @@ section img {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+section video{
+    border-radius: 0.5rem;
+    border: 5px solid #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 section p:not(.sub_page section p, section.center p){
     max-width: 800px;
     margin: 30px 0;
@@ -502,7 +508,32 @@ footer {
     }
 }
 
+.dsk{
+    display: block;
+}
+
+.mb{
+    display: none;
+}
+
+img.mb{
+    margin: 10px auto;
+}
+
+section li p{
+    text-align: start !important;
+}
+
 @media (max-width: 990px) {
+    section.center{
+        width: 100%;
+    }
+    .dsk{
+        display: none !important;
+    }
+    .mb{
+        display: block;
+    }
     main{
         padding-top: 3rem;
     }
@@ -525,8 +556,17 @@ footer {
         font-size: 1.5rem;
     }
 
+    section .imgs{
+        width: 100%;
+    }
+
     section img {
-        max-width: 350px;
+        width: unset;
+        max-width: 350px !important;
+    }
+
+    section .imgs img {
+        max-width: 200px !important;
     }
 
     .title h1,
