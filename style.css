@@ -141,7 +141,7 @@ main .banner::after {
     content: '';
     width: 100%;
     height: 100%;
-    background-color: #0000005c;
+    background-color: #0000006b; /*  #0000005c */
     position: absolute;
     left: 0;
     top: 0;
@@ -183,12 +183,42 @@ section .container {
     gap: 1rem;
 }
 
+section .text{
+    width: 55%;
+}
+
+section .text h2{
+    margin-top: 10px;
+    color: #0093ff;
+}
+
+section .text .next_h2{
+    margin-top: 10px;
+}
+
+section .text ul{
+    margin-top: 20px;
+}
+
+section .text ul li{
+    margin-top: 10px;
+}
+
+section .text h4{
+    color: #0093ff;
+    margin-top: 20px;
+}
+
+section .text .sub p{
+    margin-top: 10px;
+}
+
 section .text h1 {
     font-size: 2rem;
     color: #0093ff;
     position: relative;
     width: fit-content;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 section .text h1::after {
@@ -209,7 +239,7 @@ section img {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-section p:not(.sub_page section p){
+section p:not(.sub_page section p, section.center p){
     max-width: 800px;
     margin: 30px 0;
     line-height: 2;
@@ -231,6 +261,24 @@ section .btn {
 
 section .btn:hover {
     background-color: #007ad3;
+}
+
+section.center{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+section.center section{
+    padding: 0 !important;
+    margin-top: 40px;
+}
+
+section.center h1{
+    color: #0093ff;
+    margin-bottom: 15px;
+    font-size: 28px;
 }
 
 .about_main {
