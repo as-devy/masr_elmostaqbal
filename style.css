@@ -232,6 +232,15 @@ section .text h1::after {
     height: 2px;
 }
 
+section .imgs{
+    width: 35%;
+}
+
+section .imgs img{
+    width: 100%;
+    max-width: 450px;
+}
+
 section img {
     max-width: 550px;
     border-radius: 0.5rem;
@@ -533,6 +542,17 @@ footer {
         display: block;
         width: fit-content;
         margin: 0 auto;
+    }
+
+    section .text{
+        width: 100%;
+    }
+
+    section .imgs{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
     }
 }
 
