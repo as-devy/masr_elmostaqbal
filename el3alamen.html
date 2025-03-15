@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مصر المستقبل | مدينة العلمين الجديدة</title>
     <link rel="icon" type="image/x-icon" href="./imgs/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <div class="pre_loader">
+        <img src="./imgs/Egypt-xs.gif" alt="">
+    </div>
     <header>
         <div class="container">
             <a href="./" class="title">
@@ -123,19 +127,19 @@
         </section>
         <section>
             <div class="container">
-                <div class="text">
+                <div class="text" data-aos="fade-left">
                     <h1>لماذا مدينة العلمين الجديدة؟
                     </h1>
                     <p>تقع مدينة العلمين الجديدة في موقع استراتيجي على الساحل الشمالي الغربي لمصر، وتحديدًا بين الإسكندرية ومرسى مطروح، وتمتد على مساحة 48 ألف فدان، بواجهة ساحلية طولها 14 كيلومترًا. يهدف المشروع إلى تخفيف الضغط عن المدن الساحلية التقليدية، واستغلال شواطئ البحر المتوسط لتحقيق تنمية سياحية مستدامة، بالإضافة إلى خلق بيئة عمرانية حديثة تستوعب الزيادة السكانية وتوفر فرص عمل جديدة.
 
                     </p>
                 </div>
-                <img src="./imgs/inbound2874536605735423590.webp" alt="">
+                <img src="./imgs/inbound2874536605735423590.webp" alt="" data-aos="fade-right">
             </div>
         </section>
         <section>
             <div class="container">
-                <div class="text">
+                <div class="text" data-aos="fade-left">
                     <h1>أبرز إنجازات المشروع
                     </h1>
                     <div class="sub">
@@ -193,18 +197,18 @@
                 </div>
                 
                 <div class="imgs dsk">
-                    <img src="./imgs/معلومات-عن-مدينة-العلمين-الجديدة.jpg" alt="">
-                    <img src="./imgs/عيوب-ومميزات-مدينة-العلمين-الجديدة.webp" alt="">
-                    <img src="./imgs/3lamen_madena.jpg" alt="">
-                    <img src="./imgs/3asema_lateni.jpg" alt="">
-                    <img src="./imgs/hospitals_3asema.jpg" alt="">
+                    <img src="./imgs/معلومات-عن-مدينة-العلمين-الجديدة.jpg" alt="" data-aos="fade-right">
+                    <img src="./imgs/عيوب-ومميزات-مدينة-العلمين-الجديدة.webp" alt="" data-aos="fade-right">
+                    <img src="./imgs/3lamen_madena.jpg" alt="" data-aos="fade-right">
+                    <img src="./imgs/3asema_lateni.jpg" alt="" data-aos="fade-right">
+                    <img src="./imgs/hospitals_3asema.jpg" alt="" data-aos="fade-right">
                     
                 </div>
             </div>
         </section>
         <section>
             <div class="container">
-                <div class="text">
+                <div class="text" data-aos="fade-left">
                     <h1> العائدات الاقتصادية والتنموية
                     </h1>
                     <ul>
@@ -215,11 +219,23 @@
                         <li>تحويل الساحل الشمالي من وجهة سياحية صيفية إلى مدينة مستدامة على مدار العام</li>
                     </ul>
                 </div>
-                <img src="./imgs/443752.jpg" alt="">
+                <img src="./imgs/443752.jpg" alt="" data-aos="fade-right">
             </div>
         </section>
     </main>
-
+    <footer>
+        <div class="container">
+            <h3>تمت التطوير بواسطة / <a href="./about_developer.html">عمر هاني البدويهي</a></h1>
+                <p>جميع الحقوق محفوظة لمسابقة نعم نسنطيع بوزارة التربية و التعليم 2024/2025</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+            once: true,
+        });
+    </script>
     <script src="./main.js"></script>
 </body>
 

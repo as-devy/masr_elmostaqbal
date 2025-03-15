@@ -17,6 +17,32 @@ body {
     direction: rtl;
     background-color: #ededed;
     position: relative;
+    overflow-x: hidden;
+}
+
+.pre_loader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #f7f7f7;
+    z-index: 99999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+}
+
+.pre_loader.disactive{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.pre_loader img{
+    width: 70px;
 }
 
 header {
@@ -406,7 +432,7 @@ section.center h1{
 }
 
 footer {
-    background-color: #fff;
+    background-color: #f5f5f5;
     padding: 15px 0;
 }
 

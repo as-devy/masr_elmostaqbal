@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مصر المستقبل | قناة السويس الجديدة</title>
     <link rel="icon" type="image/x-icon" href="./imgs/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <div class="pre_loader">
+        <img src="./imgs/Egypt-xs.gif" alt="">
+    </div>
     <header>
         <div class="container">
             <a href="./" class="title">
@@ -117,7 +121,7 @@
         </section>
         <section>
             <div class="container">
-                <div class="text">
+                <div class="text" data-aos="fade-left">
                     <h1>لماذا كانت الحاجة إلى قناة السويس الجديدة؟
                     </h1>
                     <p>تُعتبر قناة السويس من أهم الممرات المائية في العالم، حيث تمر عبرها 12% من حركة التجارة العالمية، و22% من إجمالي حركة الحاويات عالميًا. ومع تزايد أحجام السفن العالمية وارتفاع معدلات التجارة الدولية، كانت هناك حاجة ماسة إلى تطوير القناة وزيادة قدرتها الاستيعابية.
@@ -126,12 +130,12 @@
 
                     </p>
                 </div>
-                <img src="./imgs/19_2023-638270244574308160-430.jpg" alt="">
+                <img src="./imgs/19_2023-638270244574308160-430.jpg" alt="" data-aos="fade-right">
             </div>
         </section>
         <section>
             <div class="container">
-                <div class="text">
+                <div class="text" data-aos="fade-left">
                     <h1>إنجازات الرئيس السيسي في تنفيذ المشروع
                     </h1>
                     <div class="sub">
@@ -176,23 +180,23 @@
 
                         </p>
 
-                        <img class="mb" src="./imgs/manteqa.jpg" alt="">
+                        <img class="mb" src="./imgs/manteqa.jpg" alt="" data-aos="fade-right">
                     </div>
                     
                 </div>
                 <div class="imgs dsk">
-                    <img src="./imgs/6-8-2015-1-jpg.webp" alt="">
-                    <img src="./imgs/1-1776251.webp" alt="">
-                    <img src="./imgs/qnat_gedea_ta3zez.jpg" alt="">
-                    <img src="./imgs/qnat_melaha.jpg" alt="">
-                    <img src="./imgs/qnat_enshaq.jpg" alt="">
+                    <img src="./imgs/6-8-2015-1-jpg.webp" alt="" data-aos="fade-right">
+                    <img src="./imgs/1-1776251.webp" alt="" data-aos="fade-right">
+                    <img src="./imgs/qnat_gedea_ta3zez.jpg" alt="" data-aos="fade-right">
+                    <img src="./imgs/qnat_melaha.jpg" alt="" data-aos="fade-right">
+                    <img src="./imgs/qnat_enshaq.jpg" alt="" data-aos="fade-right">
                 </div>
                 
             </div>
         </section>
         <section>
             <div class="container">
-                <div class="text">
+                <div class="text" data-aos="fade-left">
                     <h1> الفوائد الاقتصادية والتنموية لمصر 
                     </h1>
                     <ul>
@@ -203,11 +207,23 @@
                         <li>استقطاب المزيد من الاستثمارات الأجنبية، مما يدعم النمو الاقتصادي</li>
                     </ul>
                 </div>
-                <img src="./imgs/cae5c2ad7905c908b6bbc755ba9d4d75ee8c3e5d.jpg" alt="">
+                <img src="./imgs/cae5c2ad7905c908b6bbc755ba9d4d75ee8c3e5d.jpg" alt="" data-aos="fade-right">
             </div>
         </section>
     </main>
-
+    <footer>
+        <div class="container">
+            <h3>تمت التطوير بواسطة / <a href="./about_developer.html">عمر هاني البدويهي</a></h1>
+                <p>جميع الحقوق محفوظة لمسابقة نعم نسنطيع بوزارة التربية و التعليم 2024/2025</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+            once: true,
+        });
+    </script>
     <script src="./main.js"></script>
 </body>
 

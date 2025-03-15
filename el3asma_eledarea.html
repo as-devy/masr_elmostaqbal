@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مصر المستقبل | العاصمة الإدارية الجديدة</title>
     <link rel="icon" type="image/x-icon" href="./imgs/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <div class="pre_loader">
+        <img src="./imgs/Egypt-xs.gif" alt="">
+    </div>
     <header>
         <div class="container">
             <a href="./" class="title">
@@ -124,7 +128,7 @@
         </section>
         <section>
             <div class="container">
-                <div class="text">
+                <div class="text" data-aos="fade-left">
                     <h1>لماذا العاصمة الإدارية الجديدة؟</h1>
                     <p>مع تزايد الكثافة السكانية في القاهرة، وارتفاع معدلات التكدس المروري، أصبحت الحاجة ملحّة لإيجاد
                         مدينة جديدة قادرة على استيعاب النمو السكاني والاقتصادي، وهو ما دفع الدولة المصرية إلى تنفيذ
@@ -137,12 +141,12 @@
 
                     </p>
                 </div>
-                <img src="./imgs/shutterstock_2450133049-scaled.jpg" alt="">
+                <img src="./imgs/shutterstock_2450133049-scaled.jpg" alt="" data-aos="fade-right">
             </div>
         </section>
         <section>
             <div class="container">
-                <div class="text">
+                <div class="text" data-aos="fade-left">
                     <h1>أبرز إنجازات المشروع
                     </h1>
                     <div class="sub">
@@ -151,7 +155,7 @@
                         <p>تم إنشاء الحي الحكومي ليضم مقر رئاسة مجلس الوزراء، ومباني الوزارات المختلفة، والبرلمان، وهو
                             مجهز بأحدث التقنيات الرقمية لتحويل الجهاز الإداري إلى حكومة ذكية بلا ورق، مما يرفع كفاءة
                             العمل الحكومي ويسهل تقديم الخدمات للمواطنين.</p>
-                        <img class="mb" src="./imgs/1678135217063.jpg" alt="">
+                        <img class="mb" src="./imgs/1678135217063.jpg" alt="" >
 
                         <h4>مركز مالي وأعمال عالمي
                         </h4>
@@ -193,18 +197,18 @@
                     </div>
                 </div>
                 
-                <div class="imgs dsk">
-                    <img src="./imgs/مميزات-وعيوب-العاصمة-الإدارية.webp" alt="">
-                    <img src="./imgs/17515124781603957407.jpg" alt="">
-                    <img src="./imgs/202207121229292929.jpg" alt="">
-                    <img src="./imgs/Noor-most-used-scaled.jpg" alt="">
-                    <img src="./imgs/أين-تقع-العاصمة-الإدارية-الجديدة-1024x676.webp" alt="">
+                <div class="imgs dsk" >
+                    <img src="./imgs/مميزات-وعيوب-العاصمة-الإدارية.webp" alt="" data-aos="fade-right">
+                    <img src="./imgs/17515124781603957407.jpg" alt="" data-aos="fade-right">
+                    <img src="./imgs/202207121229292929.jpg" alt="" data-aos="fade-right">
+                    <img src="./imgs/Noor-most-used-scaled.jpg" alt="" data-aos="fade-right">
+                    <img src="./imgs/أين-تقع-العاصمة-الإدارية-الجديدة-1024x676.webp" alt="" data-aos="fade-right">
                 </div>
             </div>
         </section>
         <section>
             <div class="container">
-                <div class="text">
+                <div class="text" data-aos="fade-left">
                     <h1> العائدات الاقتصادية والتنموية
                     </h1>
                     <ul>
@@ -216,11 +220,23 @@
                     </ul>
                     <p>تعد العاصمة الإدارية الجديدة مشروعًا استراتيجيًا غير مسبوق، يعكس رؤية الرئيس عبد الفتاح السيسي في إعادة رسم خريطة مصر العمرانية، وتحقيق تنمية مستدامة تضع البلاد على خريطة التنافسية العالمية. هذا المشروع لا يمثل مجرد مدينة جديدة، بل هو خطوة عملاقة نحو مستقبل أكثر إشراقًا لمصر والمصريين </p>
                 </div>
-                <img src="./imgs/مميزات-العاصمة-الإدارية-الجديدة.jpg" alt="">
+                <img src="./imgs/مميزات-العاصمة-الإدارية-الجديدة.jpg" alt="" data-aos="fade-right">
             </div>
         </section>
     </main>
-
+    <footer>
+        <div class="container">
+            <h3>تمت التطوير بواسطة / <a href="./about_developer.html">عمر هاني البدويهي</a></h1>
+                <p>جميع الحقوق محفوظة لمسابقة نعم نسنطيع بوزارة التربية و التعليم 2024/2025</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+            once: true,
+        });
+    </script>
     <script src="./main.js"></script>
 </body>
 

@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مصر المستقبل - عمر هاني البدويهي</title>
     <link rel="icon" type="image/x-icon" href="./imgs/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <div class="pre_loader">
+        <img src="./imgs/Egypt-xs.gif" alt="">
+    </div>
     <header>
         <div class="container" style="justify-content: center;">
             <a href="./" class="title">
@@ -21,7 +25,7 @@
     <main class="about_main">
         <div class="personal">
             <div class="container">
-                <div class="text">
+                <div class="text" data-aos="fade-left">
                     <h1>عن <span>عمر البدويهي</span> 👨‍💻</h1>
                     <p>مطور مواقع يتمتع بخبرة ثلاث سنوات في تطوير الويب، حيث يعمل على كل من الواجهة الأمامية (Front-End)
                         والواجهة الخلفية (Back-End)، مما يجعله مطور Full-Stack قادرًا على بناء مواقع وتطبيقات ويب
@@ -29,14 +33,14 @@
                     <h2>مهاراته التقنية:</h2>
                     <ul>
                         <li><b>Front-End Development:</b> يمتلك خبرة واسعة في تطوير الواجهات الأمامية باستخدام HTML،
-                            CSS، وJavaScript، مما يمكنه من تصميم صفحات ويب متجاوبة وجذابة تتماشى مع أفضل ممارسات تجربة
+                            CSS، JavaScript، مما يمكنه من تصميم صفحات ويب متجاوبة وجذابة تتماشى مع أفضل ممارسات تجربة
                             المستخدم (UX) وتجربة الواجهة (UI).</li>
                         <li><b>Back-End Development:</b> لديه خبرة قوية في تطوير الواجهات الخلفية باستخدام PHP وNode.js،
                             مما يمكنه من إنشاء أنظمة ديناميكية وقواعد بيانات متصلة بالمواقع، مع القدرة على التعامل مع
                             السيرفرات وإدارة البيانات بكفاءة.</li>
                         <li><b>إدارة قواعد البيانات:</b> يمكنه التعامل مع قواعد بيانات مختلفة مثل MySQL وMongoDB، مما
                             يساعد في بناء أنظمة قوية تعتمد على إدارة البيانات بشكل سلس وفعال.</li>
-                        <li><b>تطوير التطبيقات الديناميكية:</b> بفضل معرفته بـ JavaScript وNode.js، يمكنه تطوير تطبيقات
+                        <li><b>تطوير التطبيقات الديناميكية:</b> بفضل معرفته بـ JavaScript و Node.js، يمكنه تطوير تطبيقات
                             ويب تفاعلية تعمل بسلاسة مع المستخدمين وتوفر أداءً عاليًا.</li>
                     </ul>
                     <div class="certificates">
@@ -45,7 +49,7 @@
                         <div><img src="./imgs/back_certif.png" alt=""></div>
                     </div>
                 </div>
-                <img class="wrapper_img" src="./imgs/omar.png" alt="">
+                <img class="wrapper_img" src="./imgs/omar.png" alt="" data-aos="fade-right">
             </div>
         </div>
     </main>
@@ -84,6 +88,14 @@
             }
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+            once: true,
+        });
+    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
