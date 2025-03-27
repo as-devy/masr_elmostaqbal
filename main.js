@@ -26,23 +26,14 @@ if (document.querySelectorAll(".PPhIP")) {
     })
 }
 
-// Function to get a cookie by name
-function getCookie(name) {
-    const cookies = document.cookie.split("; ");
-    for (let cookie of cookies) {
-        const [key, value] = cookie.split("=");
-        if (key === name) {
-            return decodeURIComponent(value);
-        }
-    }
-    return null;
+// Function to get visitors from localStorage
+function getVisitors() {
+    return JSON.parse(localStorage.getItem("visitors")) || [];
 }
 
-// Function to set a cookie with JSON data
-function setCookie(name, value, days) {
-    const expires = new Date();
-    expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
-    document.cookie = `${name}=${encodeURIComponent(JSON.stringify(value))}; expires=${expires.toUTCString()}; path=/; SameSite=Strict`;
+// Function to save visitors to localStorage
+function saveVisitors(visitors) {
+    localStorage.setItem("visitors", JSON.stringify(visitors));
 }
 
 // Function to track visitors
@@ -59,13 +50,12 @@ function trackVisitor() {
                 timestamp: new Date().toISOString()
             };
 
-            let visitors = getCookie("visitors");
-            visitors = visitors ? JSON.parse(visitors) : [];
+            let visitors = getVisitors();
 
             // Check if visitor with the same IP already exists
             if (!visitors.some(v => v.ip === visitor.ip)) {
                 visitors.push(visitor);
-                setCookie("visitors", visitors, 7); // Store for 7 days
+                saveVisitors(visitors);
             }
 
             console.log("Updated Visitors List:", visitors);
